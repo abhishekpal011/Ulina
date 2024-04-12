@@ -1,0 +1,1528 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    list-style: none;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+
+}
+
+.container {
+
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#header {
+    width: 100%;
+    background-color: #DEECEC;
+    border-bottom: solid 1px #84BABE;
+}
+
+.active {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    cursor: pointer;
+
+}
+
+.navigation {
+    width: auto;
+}
+
+.navigation ul {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+
+}
+
+.navigation ul li {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.navigation ul li:hover i {
+    transform: rotate(180deg);
+}
+
+.navigation ul li a {
+    padding: 50px 0;
+    display: block;
+    color: #6A7087;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.icon {
+    display: flex;
+    width: auto;
+    column-gap: 30px;
+}
+
+.navigation ul li::after {
+    content: "";
+    width: 59px;
+    height: 3px;
+    margin-top: 38px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    border-radius: 10px;
+    transition: all ease 1s;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #84BABE;
+}
+
+.navigation ul li.unique::after {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+
+}
+
+.navigation ul li:hover::after {
+    left: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon a.after {
+    position: relative;
+}
+
+.icon a.after::after {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    content: "4";
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    line-height: normal;
+    display: flex;
+    background: #F04726;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Work Sans';
+}
+
+#banner {
+    width: 100%;
+    display: block;
+    background-color: #DEECEC;
+    position: relative;
+}
+
+#banner::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/vecter-banner.png);
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+.banner-left::before {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 100%;
+    height: 274px;
+    background-image: url(../images/Group-twentytwo.png);
+    left: 65%;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+
+.banner-left {
+    width: 50%;
+    position: relative;
+}
+
+.banner-left-content {
+    width: 100%;
+    padding-top: 173px;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+
+
+}
+
+.banner-left-content h6 {
+    font-size: 20px;
+    font-family: "Outfit";
+    color: #589195;
+    font-weight: 400;
+}
+
+.banner-left-content h1 {
+    font-size: 50px;
+    font-family: "Outfit";
+    color: #3A415C;
+    font-weight: 500;
+}
+
+.banner-left-content p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "work sans";
+    color: #707686;
+}
+
+.banner-left-content button {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "outfit";
+    padding: 14px 32px;
+    line-height: normal;
+    border-radius: 38px;
+    background-color: #589195;
+    cursor: pointer;
+    max-width: fit-content;
+    transition: all ease .5s;
+}
+
+.banner-left-content button:hover {
+    background-color: #297176;
+}
+
+.banner-right {
+    width: 50%;
+    padding-top: 45px;
+    display: inline-block;
+}
+
+.slide-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.slide-item img {
+    width: auto;
+    position: relative;
+    z-index: 1;
+    left: 77px;
+    top: 38px;
+
+}
+
+.slide-item::before {
+    position: absolute;
+    content: "";
+    width: 416px;
+    height: 416px;
+    border-radius: 50%;
+    top: 106px;
+    right: 0;
+    background-color: white;
+
+}
+
+.slick-dots {
+    justify-content: center;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 63px;
+
+}
+
+.slick-dots li button {
+    height: 10px;
+    width: 10px;
+    background-color: #297176;
+    border-radius: 10px;
+    font-size: 0;
+    border: 0;
+    opacity: 60%;
+
+}
+
+.slick-dots li {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px transparent;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active,
+.slick-dots li:hover {
+    border-color: #31797E;
+    opacity: 100%;
+}
+
+.slick-dots li.slick-active button,
+.slick-dots li:hover button {
+    background: #31797E;
+    opacity: 100%;
+}
+
+.navigation ul li .drop-down {
+    width: 250px;
+    display: none;
+    background-color: #589195;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 111;
+}
+
+
+.navigation ul li .drop-down a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+}
+
+.navigation ul li .drop-down a:hover {
+    background-color: #567e81;
+}
+
+.navigation ul li:hover .drop-down {
+    display: block;
+    transition: all ease 1s;
+}
+
+#facilities {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.fac-main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fac-1 {
+    width: 25%;
+}
+
+.fac-1 h6 {
+    font-size: 18px;
+    font-family: "work sans";
+    padding: 10px 0;
+    color: #34394C;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fac-1 p {
+    font-size: 16px;
+    font-family: "work sans";
+    color: #7F8698;
+    max-width: 196px;
+    font-weight: 300;
+}
+
+#arivall {
+    display: block;
+    width: 100%;
+    padding-bottom: 111px;
+}
+
+.arivall-title {
+    width: 100%;
+    padding-bottom: 29px;
+}
+
+.arivall-title h2 {
+    font-size: 50px;
+    font-family: "outfit";
+    font-weight: 400;
+    color: #34394C;
+    line-height: 60px;
+}
+
+.arivall-title p {
+    font-family: "work sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #707686;
+}
+
+.arivall-card {
+    width: 100%;
+    display: flex;
+}
+
+.arivall-card1 {
+
+    width: calc(25% - 23px);
+    display: flex;
+
+    flex-wrap: wrap;
+    position: relative;
+
+
+}
+
+.card1 {
+    overflow: hidden;
+    padding: 41px 58px 70px 58px;
+    background-color: #F7F8FC;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    margin-bottom: 20px;
+}
+
+.card1:hover.card1 img {
+    transform: scale(1.2);
+}
+
+.card1 img {
+    transform: scale(1);
+    transition: ease .5s;
+}
+
+.arivall-card1 span {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    background-color: #31797E;
+    padding: 3px 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.arivall-card1 a {
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    background-color: #F04726;
+    padding: 3px 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: "outfit";
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.arivall-card1 ul {
+    display: flex;
+
+    column-gap: 10px;
+    justify-content: start;
+}
+
+.arivall-card1 ul li.color {
+
+    color: #FFB400;
+}
+
+.arivall-card1 ul li {
+    font-size: 16px;
+    font-family: "work sans";
+    font-weight: 300;
+    color: #7F8698;
+}
+
+.arivall-card1 h3 {
+    cursor: pointer;
+    width: 100%;
+    font-size: 22px;
+    font-family: "work sans";
+    font-weight: 500;
+    color: #34394C;
+    padding: 15px 0;
+    display: block;
+    line-height: 28px;
+}
+
+.card-bottom {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-bottom ul li {
+    border: solid 1px #A5A9B2;
+    color: #A5A9B2;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.card-bottom h5 {
+    color: #297176;
+    font-family: " Work Sans";
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.card-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+#deal {
+    padding: 70px 0 120px 0;
+    width: 100%;
+    background-color: #F6F8FA;
+    ;
+
+}
+
+.deal-left {
+    width: 50%;
+}
+
+.deal-left {
+    background-color: #DEECEC;
+    width: 475px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    height: 475px;
+    transition: ease .5s;
+}
+
+.deal-left img {
+    transform: scale(1);
+    transition: all ease .5s;
+}
+
+.deal-left:hover img {
+    transform: scale(1.2);
+}
+
+.deal-left:hover {
+    background-color: #297176;
+}
+
+.deal-right {
+    width: 50%;
+}
+
+.deal-right h6 {
+    color: #589195;
+    font-weight: 400;
+    font-family: "Outfit";
+    font-size: 20px;
+}
+
+.deal-right h2 {
+    color: #34394C;
+    font-family: "Outfit";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.deal-right p {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.right-bottom {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    column-gap: 72px;
+}
+
+.right-bottom h4 {
+    color: #589195;
+    font-family: Outfit;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.right-bottom h4 del {
+    text-decoration: line-through;
+    color: #5B6075;
+    font-family: " Outfit";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.right-bottom button {
+    padding: 5px 38px;
+    border-radius: 38px;
+    background: #589195;
+    color: #FFF;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.right-bottom button:hover {
+    background-color: #297176;
+}
+
+.count-down {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 20px;
+}
+
+.count-down h3 {
+    width: 100%;
+    color: #34394C;
+    font-family: "Outfit";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 83px;
+    justify-content: center;
+    position: relative;
+}
+
+.box::after {
+    position: absolute;
+    top: 26px;
+    right: -7px;
+    content: ":";
+    font-size: 28px;
+    width: 2px;
+    height: 2px;
+
+}
+
+.box h5 {
+    background-color: white;
+    width: 83px;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #34394C;
+    font-family: "Outfit";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 60px;
+    transition: all ease .5s;
+}
+
+.box h5:hover {
+    background-color: #297176;
+    color: white;
+}
+
+.box:last-child::after {
+    display: none;
+}
+
+#Product {
+    width: 100%;
+    padding: 100px 0 90px 0;
+}
+
+.product-title {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-title h2 {
+    color: #34394C;
+    font-family: "Outfit";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.product-title p {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.product-menu {
+    width: 50%;
+    display: flex;
+    align-items: end;
+
+}
+
+.product-menu ul {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.product-menu ul li {
+    color: #AFB4C4;
+    font-family: "Outfit";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.product-menu ul li.tab-active a{
+    color:white;
+    background-color: #31797E;
+    padding: 5px;
+    display: block;
+}
+
+.product-card {
+    row-gap: 30px;
+    width: 100%;
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.arivall-card1 h5 {
+    color: #297176;
+    font-family: "work sans";
+    display: flex;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 600;
+    /* display: inline-block; */
+    align-items: center;
+    column-gap: 18px;
+}
+
+.card-bottom1 {
+    padding-top: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-ul ul li {
+    border: solid 1px #A5A9B2;
+    color: #A5A9B2;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.fa-circle.marron {
+    color: maroon;
+}
+
+.fa-circle.orange {
+    color: orangered;
+}
+
+.card2 {
+
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #F7F8FC;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 330px;
+    margin-bottom: 20px;
+}
+
+.card2 img {
+    transform: scale(1);
+    transition: all ease .5s;
+}
+
+.card2:hover.card2 img {
+    transform: scale(1.2);
+}
+
+#discount {
+    width: 100%;
+    /* padding-bottom: 12px; */
+}
+
+.discount-left {
+    background-color: #E9E6F0;
+    width: calc(50% - 15px);
+    display: flex;
+
+    justify-content: center;
+    transition: all ease 1s;
+}
+
+.discount-left:hover {
+    background-color: #F6EBD9;
+}
+
+.discount-right {
+    background-color: #F6EBD9;
+    width: calc(50% - 15px);
+    display: flex;
+    justify-content: center;
+    transition: all ease 1s;
+}
+
+.discount-right:hover {
+    background-color: #E9E6F0;
+}
+
+.discount-text {
+    width: 40%;
+    padding: 80px 0 80px 30px;
+}
+
+.discount-left:hover .discount-image img {
+    transform: scale(1.1);
+}
+
+.discount-right:hover .discount-image img {
+    transform: scale(1.1);
+}
+
+.discount-text h5 {
+    color: #589195;
+    font-family: "outfit";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.discount-text h2 {
+    color: #34394C;
+    font-family: "outfit";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 30px 0;
+}
+
+.discount-text a {
+    color: #000;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    display: block;
+    text-decoration-line: underline;
+}
+
+.discount-image img {
+    transform: scale(1);
+    transition: all ease .5s;
+}
+
+.discount-image {
+    width: 60%;
+    /* justify-content: end; */
+    display: flex;
+    overflow: hidden;
+}
+
+.discount-main {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+#category {
+    width: 100%;
+    padding-bottom: 145px;
+}
+
+.category-title {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.category-title h2 {
+    color: #34394C;
+    font-family: "Outfit";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.category-title p {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.category-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.category-card {
+    width: calc(25% - 22.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    color: #34394C;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.category-card p {
+    color: #BFBFBF;
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+#about-us {
+    width: 100%;
+    background-color: #F6F8FA;
+    padding: 129px 0 0 0;
+    position: relative;
+}
+
+.about-left {
+    width: calc(30% - 30px);
+    position: relative;
+    padding-top: 70px;
+}
+
+.about-left img {
+    position: absolute;
+    bottom: 0;
+    left: -95px;
+    width: 100%;
+    content: "";
+}
+
+.about-left h2 {
+    color: #34394C;
+    font-family: "outfit";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.about-left p {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 10px 0;
+}
+
+.about-left ul {
+    display: flex;
+    column-gap: 10px;
+}
+
+.about-left ul li {
+    border: solid 1px #599296;
+    color: #599296;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all ease .5s;
+}
+
+.about-left ul li:hover {
+    background-color: #297176;
+    color: white;
+}
+
+.about-right {
+    width: calc(35% - 30px);
+    background-color: white;
+    padding: 65px 20px 45px 20px;
+
+}
+.a-before{
+    width: 100%;
+    position: relative;
+}
+.a-before::before{
+    position: absolute;
+    top: -96px;
+    right: -91px;
+    width: 114px;
+    height: 120px;
+    content: "";
+    background-image: url(../images/Ellipsetwozero.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.a-before::after{
+    position: absolute;
+    bottom: 40px;
+    right: -18px;
+    width: 200px;
+    height: 200px;
+    content: "";
+    background-image: url(../images/Ellipse\ 19.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.about-right ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-right p {
+    padding: 10px 0;
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.about-bottom {
+    display: flex;
+    column-gap: 15px;
+}
+
+.about-boy img {
+    border-radius: 50%;
+}
+
+.about-text h5 {
+    color: #34394C;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about-bottom p {
+    color: #B4B9C7;
+    font-size: 16px;
+    padding: 0;
+    font-family: "outfit";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.active2 {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-right ul li.color {
+    color: #FFB400;
+}
+
+.about-slider {
+    width: 70%;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+
+}
+
+.slick-slide {
+    padding: 0 15px;
+}
+
+.about-slider .slick-dots {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 95px;
+    padding: 0 0 65px;
+    margin: 30px 0 0 15px;
+}
+
+
+.about-slider::after {
+    background-image: url(../images/Ellipse-oneseven.png);
+    position: absolute;
+    top: -113px;
+    left: -108px;
+    width: 100%;
+    height: 415px;
+    background-repeat: no-repeat;
+    content: "";
+    background-position: center;
+    z-index: -1;
+}
+
+#brand-logo {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.logo-band-main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.brand {
+    width: auto;
+    display: inline-block;
+}
+
+#footer {
+
+    width: 100%;
+    padding: 90px 0 0 0;
+    background-color: #E8EAEF;
+}
+
+.footer-left {
+
+    width: 30%;
+}
+
+.footer-left img {
+    width: auto;
+    cursor: pointer;
+}
+
+.footer-left p {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.gmail-icon input {
+    width: 100%;
+    height: 40px;
+    color: #297176;
+    border-color: white;
+    padding: 20px 40px 20px 20px;
+}
+
+.gmail-icon input::placeholder {
+    color: #AEB0B8;
+    font-family: " Work Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.42px;
+}
+
+.gmail-icon {
+    width: 100%;
+    position: relative;
+}
+
+.gmail-icon i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #7F8495;
+    content:
+        "";
+}
+
+.footer-left ul {
+    display: flex;
+    margin-top: 24px;
+    column-gap: 30px;
+}
+
+.footer-left ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    background-color: #ababab;
+}
+
+.footer-middle {
+    width: 20%;
+    max-width: 157px;
+}
+
+.footer-middle h3 {
+    color: #34394C;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.footer-middle2 ul {
+    display: block;
+}
+
+.footer-middle2 ul li {
+    color: #6E7489;
+    cursor: pointer;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.main {
+    display: flex;
+    column-gap: 5px;
+    align-items: baseline;
+}
+
+.left {
+    padding-right: 9px;
+    color: #589195;
+    cursor: pointer;
+}
+
+.right {
+    color: #6E7489;
+    font-family: " Work Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.footer-middle2 {
+    width: 20%;
+    max-width: 103px;
+}
+
+.footer-middle2 h3,.footer-middle3 h3 {
+    color: #34394C;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.footer-middle3 h3{
+    visibility: hidden;
+    color: #34394C;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 20px;   
+}
+.footer-middle3 {
+    width: 20%;
+    max-width: 103px;
+}
+
+.footer-middle3 ul li {
+    color: #6E7489;
+    cursor: pointer;
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.footer-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 31px;
+    border-bottom: solid 2px #CCD2DECF;
+}
+
+.copyright-left {
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+}
+
+.copyright-left span {
+    display: flex;
+    column-gap: 10px;
+}
+
+.copyright-left span a {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+
+}
+
+.copyright-left span {
+    color: #707686;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.form-main::after {
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px #567e81;
+    position: absolute;
+    top: -10px;
+    right: 57px;
+    display: inline-block;
+    content: "";
+}
+
+.form-main.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon a.special {
+    width: auto;
+    display: block;
+}
+
+.form-main {
+    width: 100%;
+    display: flex;
+    /* row-gap: 30px; */
+    flex-direction: column;
+    background-color: #578386;
+    z-index: 11;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    padding: 15px 30px;
+    z-index: 111111;
+}
+
+.form-title {
+    width: 100%;
+    /* background-color: white; */
+}
+
+.form-title h2 {
+    /* padding: 20px 0; */
+    font-size: 30px;
+    font-family: "work sans";
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.form-row {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.form-box {
+    width: 50%;
+}
+
+.form-box input {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    padding: 0 30px;
+}
+
+.form-box input::placeholder {
+    font-size: 18px;
+    font-family: "outfit";
+    font-weight: 400;
+}
+
+.form-row input {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 0 30px;
+}
+
+.form-row input::placeholder {
+    font-size: 18px;
+    font-family: "outfit";
+    font-weight: 400;
+   color: #6A7087;
+}
+
+.form-row select {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+
+.form-row select {
+    font-size: 18px;
+    font-family: "outfit";
+    font-weight: 400;
+    padding: 0 30px;
+    color: #6A7087;;
+
+}
+
+.form-row.action input {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'outfit';
+    color: #297176;
+
+}
+
+.fac-1 img {
+    height: 55px;
+    object-fit: none;
+}
+
+.extra {
+    position: relative;
+    width: 100%;
+}
+
+.cate-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cate-image img {
+    transform: scale(1);
+    transition: all ease .5s;
+}
+
+.cate-image img:hover {
+    transform: scale(1.2);
+}
+
+.bar {
+    width: auto;
+    display: none;
+}
+
+.line1,
+.line3 {
+    width: 25px;
+    height: 4px;
+    background-color: #707686;
+}
+
+.line2 {
+    width: 25px;
+    height: 4px;
+    margin: 3px 0;
+    display: flex;
+    background-color: #707686;
+}
+
+.card-bottom1.impo {
+    visibility: hidden;
+}
+
+.arivall-card1 h5 del {
+    text-decoration: line-through;
+    color: #969DAD;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

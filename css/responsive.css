@@ -1,0 +1,675 @@
+@media screen and (max-width:1365px) {
+    .a-before::before{
+        display: none;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1099px) {
+    .deal-left {
+        width: 400px;
+        height: 400px;
+    }
+
+    .slide-item img {
+        left: 0;
+    }
+
+    .banner-left::before {
+        display: none;
+    }
+
+    .right-bottom button {
+        height: 45px;
+        padding: 5px 20px;
+        border-radius: 38px;
+        background: #589195;
+        color: #FFF;
+        text-align: center;
+        font-family: "Outfit";
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        line-height: 48px;
+        transition: all ease .5s;
+        cursor: pointer;
+    }
+
+    #banner::after {
+        left: -50px;
+    }
+
+    .deal-right h2 {
+        font-size: 42px;
+    }
+
+    #deal {
+        padding: 50px 0;
+    }
+
+    .arivall-card1 h3 {
+        font-size: 19px;
+    }
+
+    .discount-text h2 {
+        font-size: 26px;
+        padding: 20px 0;
+    }
+
+    #category {
+        padding-bottom: 50px;
+    }
+
+    .about-left h2 {
+        font-size: 32px;
+    }
+
+    .form-main::after {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .card2{
+        height: 290px;
+    }
+    #banner::after {
+        display: none;
+    }
+
+    .banner-slider {
+        display: none;
+    }
+
+    .navigation ul {
+        column-gap: 15px;
+    }
+
+    .icon {
+        column-gap: 15px;
+    }
+
+    .banner-left {
+        width: 100%;
+    }
+
+    .banner-left-content p {
+        max-width: 488px;
+    }
+
+    .banner-left-content {
+        padding-top: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .banner-left::after {
+        display: none;
+    }
+
+    .urgent {
+        flex-direction: column-reverse;
+    }
+
+    .slide-item img {
+        left: 220px;
+    }
+
+    #banner {
+        padding-bottom: 50px;
+    }
+
+    #facilities {
+        padding: 40px 0;
+    }
+
+    .arivall-card1 {
+        width: calc(50% - 15px);
+        background-color: #F7F8FC;
+        padding: 30px;
+    }
+
+    .card1 {
+        border-bottom: solid 1px #577779;
+    }
+
+    .card-main {
+        row-gap: 30px;
+    }
+
+    #arivall {
+        padding-bottom: 50px;
+    }
+
+    .deal-left {
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .deal-right {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .product-title h2 {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .product-title {
+        width: 100%;
+    }
+
+    #Product {
+        padding: 50px 0;
+    }
+
+    .discount-left,
+    .discount-right {
+        width: 100%;
+        transition: none;
+    }
+
+    .discount-main {
+        row-gap: 30px;
+    }
+
+    .about-slider::after {
+        display: none;
+    }
+
+    .about-slider {
+        width: 50%;
+    }
+
+    .about-left {
+        width: calc(50% - 30px);
+    }
+
+    .footer-left {
+        width: 50%;
+    }
+
+    .footer-middle {
+        width: calc(50% - 15px);
+        max-width: 40%;
+    }
+
+    .footer-middle2 {
+        width: 50%;
+        max-width: 102px;
+    }
+
+    .footer-middle3 {
+        width: 50%;
+        max-width: 103px;
+    }
+
+    .footer-main {
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .about-left h2 {
+        max-width: 300px;
+    }
+
+    .banner-left-content h6 {
+        font-size: 18px;
+    }
+
+    .banner-left-content h1 {
+        line-height: 52px;
+    }
+
+    .navigation ul li a {
+        padding: 30px 0;
+    }
+
+    .slick-dots {
+        padding: 0;
+    }
+
+    #about-us {
+        padding-top: 50px;
+    }
+    .about-left img{
+        display: none;
+    }
+    /* .footer-middle3{
+        margin-top:48px;
+    } */
+}
+
+@media screen and (max-width:767px) {
+    .a-before::after{
+        display: none;
+    }
+    .form-main {
+        top: 60px;
+    }
+
+    #header {
+        padding: 20px 0;
+    }
+
+    .bar {
+        display: block;
+        font-size: 24px;
+        color: #707686;
+    }
+
+    .navigation {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        content: "";
+        height: 100%;
+        z-index: 111;
+    }
+
+    .navigation ul li .drop-down {
+        position: static;
+        width: 100%;
+    }
+
+    .navigation ul {
+        width: 100%;
+        display: inline-block;
+        background-color: #578386;
+
+    }
+
+    .navigation ul li:hover {
+        background-color: #577779;
+
+    }
+
+    .navigation ul li a {
+        color: #fff;
+        padding: 15px;
+        display: block;
+    }
+
+    .navigation ul li::after {
+        display: none;
+    }
+
+    .fa-angle-down {
+        color: white;
+    }
+
+    .navigation ul li {
+        display: none;
+        width: 100%;
+    }
+
+    .navigation ul li i {
+        position: absolute;
+        top: 17px;
+        left: 88px;
+    }
+
+
+    .navigation.show.navigation ul li {
+        display: block;
+    }
+
+    .bar.show .line2 {
+        display: none;
+    }
+    .bar.show .line1{
+        transform: rotate(55deg);
+        top: 18px;
+        position: absolute;
+    }
+    .bar.show .line3{
+        transform: rotate(125deg);
+    }
+    .icon {
+        width: 70%;
+        justify-content: end;
+    }
+
+    .fac-1 {
+        width: 50%;
+    }
+
+    .fac-main {
+        row-gap: 30px;
+    }
+
+    .deal-left {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .right-bottom button {
+        padding: 5px 25px;
+        line-height: normal;
+    }
+
+    .deal-right h2 {
+        font-size: 32px;
+    }
+
+    #Product {
+        padding: 40px 0;
+    }
+
+    .category-title h2 {
+        font-size: 32px;
+    }
+
+    .arivall-title h2 {
+        font-size: 32px;
+    }
+
+    #about-us {
+        padding-top: 50px;
+    }
+
+    .about-right p {
+        line-height: normal;
+    }
+
+    .about-right {
+        padding: 30px 15px;
+    }
+
+    .about-slider .slick-dots {
+        margin: 20px 0 0 15px;
+    }
+
+    .copyright-left span a {
+        font-size: 16px;
+    }
+
+    #footer {
+        padding-top: 40px;
+    }
+
+    .category-card h3 {
+        font-size: 24px;
+    }
+
+    .footer-left p {
+        font-size: 16px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .footer-left ul {
+        margin-top: 10px;
+        column-gap: 10px;
+    }
+
+    .footer-middle2 h3,
+    .footer-middle h3 {
+        margin-bottom: 20px;
+    }
+
+    .gmail-icon {
+        padding: 10px 0;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .icon {
+        width: 50%;
+    }
+
+    .product-menu {
+        margin-bottom: 20px;
+    }
+
+    .card1 {
+        padding: 20px;
+    }
+
+    .fac-1 {
+        width: 100%;
+        background-color: #DEECEC;
+        color: white;
+        padding: 15px;
+    }
+
+    .fac-1 h6 {
+        color: #589195;
+    }
+
+    .product-menu ul {
+        column-gap: 30px;
+    }
+
+    .fac-main {
+        row-gap: 10px;
+    }
+
+    .product-menu ul li {
+        font-size: 16px;
+    }
+
+    .banner-left-content h6 {
+
+        font-size: 16px;
+    }
+
+    .banner-left-content h1 {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    #banner {
+        padding-bottom: 30px;
+    }
+
+    .banner-left-content {
+        row-gap: 10px;
+        padding-top: 30px;
+    }
+
+    .banner-left-content p {
+        font-size: 16px;
+    }
+
+    .banner-left-content button {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .arivall-title p {
+        font-size: 16px;
+
+    }
+
+    .arivall-card1 {
+        width: 100%;
+    }
+
+    .deal-left {
+        width: 300px;
+        height: 300px;
+        align-items: normal;
+    }
+
+    .deal-right h2 {
+        line-height: normal;
+    }
+
+    .deal-right {
+        margin-top: 20px;
+    }
+
+    .deal-right p {
+        line-height: normal;
+        font-size: 14px;
+    }
+
+    .right-bottom h4 {
+        font-size: 28px;
+    }
+
+    .right-bottom h4 del {
+        font-size: 18px;
+    }
+
+    .box {
+        width: 57px;
+    }
+
+    .box h5 {
+        width: 57px;
+        height: 57px;
+        font-size: 20px;
+    }
+
+    .box::after {
+        top: 20%;
+    }
+
+    .product-title h2 {
+        line-height: normal;
+    }
+
+    .product-card {
+        margin-top: 0;
+    }
+
+    #Product {
+        padding: 30px 0;
+    }
+
+    .discount-main {
+        max-width: 100%;
+    }
+
+    .discount-image {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+
+    .discount-image img {
+        max-height: 140px;
+        max-width: 165px;
+    }
+
+    .discount-text a {
+        font-size: 14px;
+    }
+
+    .discount-text {
+        width: 50%;
+        padding: 20px 0 20px 10px;
+    }
+
+    .discount-text h2 {
+        font-size: 16px;
+        line-height: normal;
+        padding: 5px 0;
+    }
+
+    .category-card {
+        width: calc(50% - 15px);
+    }
+
+    .category-card h3 {
+        line-height: normal;
+        padding: 5px 0;
+    }
+
+    .category-main {
+        row-gap: 30px;
+    }
+
+    .about-left img {
+        display: none;
+    }
+
+    .about-slider {
+        width: 100%;
+    }
+
+    .about-left {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .active2 {
+        row-gap: 30px;
+    }
+
+    #about-us {
+        padding-top: 30px;
+    }
+
+    .about-slider .slick-dots {
+        margin-bottom: 30px;
+    }
+
+    .footer-left {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-middle,
+    .footer-middle1,
+    .footer-middle2,
+    .footer-middle3 {
+        width: calc(50% - 15px);
+        max-width: none;
+    }
+
+    .footer-middle2 ul,
+    .footer-middle1 ul,
+    .footer-middle3 ul {
+        max-width: 103px;
+    }
+
+    .form-box input::placeholder {
+        font-size: 14px;
+    }
+
+    .form-main {
+        width: 100%;
+    }
+
+    .right-bottom button {
+        height: 40px;
+
+    }
+
+    .card2 {
+        align-items: center;
+    }
+
+    .copyright-left {
+        flex-direction: column;
+    }
+
+    .copyright-left span {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .copyright-left span a {
+        font-size: 14px;
+    }
+   
+}
